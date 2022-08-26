@@ -1,0 +1,38 @@
+h1,p, section {
+	color : gold;
+}
+p {
+	background-color: thistle;
+}
+p.userfined_p_class {
+	background-color: turquoise;
+	color: red;	
+	text-align: justify;
+}
+section.userfined_p_class{
+	color: navy;
+	background-color: gold;
+	letter-spacing: 1.2px;
+	word-spacing: 6px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}			
+#quotepara {
+	background-color: black;
+	/*color: white;*/
+}
+nav ul {
+	list-style-type: none;
+}
+blockquote:before{
+	content : open-quote;
+}
+blockquote:after{
+	content:  close-quote;
+}
+p.required:after{
+	content : "*";
+	color:  red;
+	font-weight: bold;
+	font-size: 20px;
+}
