@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Colors Borders Video </title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22e6195b42.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+	<style>
+		.container {
+			width : 80%;
+			border-width : 2px;
+			border-style: solid;
+			border-color:  lightgray;
+			border-radius: 25px;
+			min-width: 600px;
+			margin-left : 10%;
+			padding: 20px;
+			background: url('paper-airplane.png');
+			background-size: contain;
+			background-repeat: repeat-y;
+			background-position: center;
+			/*background-color: rgba(256, 206, 51, 0.8);*/
+		}
+		section{
+			padding: 20px;
+			text-align: justify;
+		}
+		.profilepic{
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+		}
+		.videoBackground {
+			position: absolute; 
+			top: 0; 
+			left: 0;
+			width: auto;
+			z-index: -1000;
+			overflow: hidden;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<i class="fa-solid fa-carrot" style="color : Orange; font-size: 40px;"></i>
+		<i class="fa-brands fa-twitter" style="color : blue; font-size: 40px;"></i>
+		Carrots for Sale : <span class="material-icons md-24">face</span>
+		<p>
+		<section>
+			<figure>
+				<img class="profilepic" src="avatar.png" alt="Profile Pic" >
+			</figure>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			<br><br><br><br><br>
+
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br><br><br><br>
+
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</section>
+		<section>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<video controls ="true" autoplay muted loop >
+					<source src="Woman-sd.mp4" media="(max-width:400px)"> 
+					<source src="Woman-hd.mp4" media="(-webkit-min-device-pixel-ratio : 2), (min-resolution : 1920dpi)"> 
+				</video>
+				<audio src="Woman-sd.mp4" autoplay="true" controls>
+					
+				</audio>
+		</section>
+		</p>
+	</div>
+</body>
+</html>

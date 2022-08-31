@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tables </title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22e6195b42.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+	<style>
+		table,th, td, tr{
+			border : solid gray 2px;
+			border-collapse: collapse;
+			width : 800px;
+		}
+		tbody tr:nth-of-type(odd){
+			background-color: #E8D391;
+		}
+		@media screen and (min-width: 800px){
+			table{
+				font-size: 16px;
+			}
+		}
+
+		@media screen and (min-width: 480px){
+			.reponsivetable{
+				overflow-x: scroll;
+				width: 100%;
+				-webkit-overflow-scrolling : touch;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="reponsivetable">
+		<table > 
+			<thead>
+				<tr>
+					<th>Fruits</th>
+					<th>Color</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Apple</td>
+					<td>Orange</td>
+					<td>50$</td>
+				</tr>
+
+				<tr>
+					<td>Grapes</td>
+					<td colspan="2">Green</td>
+					
+				</tr>
+
+				<tr>
+					<td>Banana</td>
+					<td>Orange</td>
+					<td>50$</td>
+				</tr>
+
+				<tr>
+					<td>Mango</td>
+					<td>Orange</td>
+					<td>50$</td>
+				</tr>
+
+				<tr>
+					<td>Kiwi</td>
+					<td>Orange</td>
+					<td>50$</td>
+				</tr>
+			</tbody>			
+		</table>
+		</div>
+	</div>
+</body>
+</html>

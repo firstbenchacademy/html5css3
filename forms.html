@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22e6195b42.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+	<script>
+
+
+		function validateCheckbox(){
+			var checkedBoxes = document.querySelectorAll('input[name=interests]:checked');
+			for (var i = 0, length = checkedBoxes.length; i < length; i++) {
+				if(checkedBoxes[i].checked){
+					alert(checkedBoxes[i].value + " IS CHECKED !!");
+				}
+			}
+		}
+		function validateRadio(){
+			var radios = document.getElementsByName('gender');
+			for (var i = 0, length = radios.length; i < length; i++) {
+			  if (radios[i].checked) {
+			    alert(radios[i].value + " IS CLICKED !!");
+			    break;
+			  }
+			}
+		}
+		function validate(){
+			validateRadio();
+			validateCheckbox();
+		}
+	</script>
+	<style>
+
+	</style>
+</head>
+<body>
+	<div class="form">
+	<form action="#" onsubmit="return validate()">
+		<label for="firstname">Firstname :</label>
+		<input id="firstname" type="text">
+		<br>
+		<label for="password">password :</label>
+		<input id="password" type="password" >
+		<br>
+		<label for="phone">PHone :</label>
+		<input id="phone" type="tel" placeholder="201-999-0989"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+<br><br><br>
+		Choose your gender<br>
+		<input type="radio" name="gender" id="female" value="female">Female<br>
+		<input type="radio" name="gender" id="male" value="male">Male<br>
+		<input type="radio" name="gender" id="trans" value="trans">Trans<br>
+
+		<br>
+		Choose your Interests <br>
+		Fishing : <input type="checkbox" name="interests" value="fishing"> <br>
+		Hiking :  <input type="checkbox" name="interests" value="hiking"><br>
+		Painting : <input type="checkbox" name="interests" value="painting"><br>
+
+<br>
+		Choose your Interests <br>
+		<select multiple>
+			<option value="fishing">	Fishing</option>
+			<option value="hiking">	Hiking</option>
+			<option value="painting">	Painting</option>
+		</select>
+		<input type="submit" name="Submit" value="Send">
+	</form>
+	</div>
+</body>
+</html>
